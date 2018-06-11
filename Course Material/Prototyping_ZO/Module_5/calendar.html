@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			<title> Broza Calendar</title>
+			<link rel="stylesheet" href="calendar.css">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+			<script type="text/javascript" src="calendar.js"></script>
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			<div>
+				<h1 id="month"> Month</h1>
+				<h1 id="year">Year</h1>
+				<button type ="button" class ="prev round">&#8249;</button>
+				<button type ="button" class ="next round">&#8250;</button>				
+			</div>
+
+			<div id="myModal" class="modal" style="display:none; ">
+
+			  <!-- Modal content -->
+			  <div class="modal-content">
+			    <div class="modal-header">
+			      <span class="close">&times;</span>
+			      <h2></h2>
+			    </div>
+			    <div class="modal-body">
+			     </div>
+			    <div class="modal-footer">
+			      <h3></h3>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="tab">
+		  		<button class="dropdown" id="login">Login</button>
+			  		<div id="dropdown_login">
+			  			<label> Username:</label>
+			  			<input id ="username" type="text" name="lusername">
+			  			<label> Password:</label>
+			  			<input id ="password" type="password" name="lpassword">
+			  			<p><button id ="login" type="submit"class="w3-btn w3-orange w3-large login">  <i class="fa fa-arrow-right"></i></button></p>		  				  			
+			  		</div>
+
+		  		<button class ="dropdown" id="register">Register</button>
+			  		<div id="dropdown_register">
+			  			<input id ="username" type="text" placeholder="New Username" name="rusername">
+			  			<input id ="password" type="password" placeholder="New Password" name="rpassword">		  			
+			  			<p><button id ="register" type="submit"class="w3-btn w3-orange w3-large register">  <i class="fa fa-arrow-right"></i></button></p>	  			
+			  		</div>
+
+		  		
+			</div> 
+			
+			
+	</head>
+
+
+	<body>		
+		
+		<script>			
+		// For our purposes, we can keep the current month in a variable in the global scope
+		var date = new Date();
+	    //Returns the current month
+	    var curr_mon_num = date.getMonth();
+	    //Returns the current year
+    	var curr_year = date.getFullYear();
+    	// Defining the current month by using the user-created Month Function 
+    	var curr_mon = new Month(curr_year,curr_mon_num);
+
+		var month = new Array();
+	    month[0] = "January";
+	    month[1] = "February";
+	    month[2] = "March";
+	    month[3] = "April";
+	    month[4] = "May";
+	    month[5] = "June";
+	    month[6] = "July";
+	    month[7] = "August";
+	    month[8] = "September";
+	    month[9] = "October";
+	    month[10] = "November";
+	    month[11] = "December";
+
+
+		// Creation of html elements for proper placement and formatting	
+		var body = document.getElementsByTagName("body")[0];
+		var breakTag = document.createElement("br");
+		var container = document.createElement("div");
+
+		container.setAttribute("id", "calendarHolder");
+		body.appendChild(breakTag);
+		body.appendChild(container);
+		
+		document.addEventListener("DOMContentLoaded", updateCalendar, false);
+		document.getElementById("login").addEventListener("click", function(event){
+				login();
+				alert("hello?");
+				getSessionUser();
+				loginView();
+				crEvEventListener();
+				logoutEventListener();
+				//loggedIn = true;
+				fetchEvents();
+			}, false);
+
+			document.getElementById("register").addEventListener("click", function(event){
+				alert("clicked");
+				register();
+				
+			}, false);
+
+		document.getElementById("month").innerHTML = month[curr_mon.month];
+		document.getElementById("year").innerHTML = curr_mon.year;
+		
+		//Buttons to go to the previous month or the next month from the current month
+		$("button.prev").click(prev);
+		$("button.next").click(next);
+		
+		$(".register").click(register);
+
+		// This updateCalendar() function only alerts the dates in the currently specified month.  You need to write
+		// it to modify the DOM (optionally using jQuery) to display the days and weeks in the current month.
+		function updateCalendar()
+		{
+			
+			var mofy = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+			var dofw = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+			var table = document.createElement("table");
+			container.appendChild(table);
+
+			// Creating the Days of the Week Header
+			var weektr = document.createElement("tr");
+			weektr.setAttribute("id", "weekdays");
+			table.appendChild(weektr);				
+			for(var i=0; i<dofw.length; i++) 
+			{
+				var th = document.createElement("th");
+				weektr.appendChild(th);
+				th.innerHTML = dofw[i];
+			}
+			
+			//Putting the actual calender date corresponding to its day of the week
+			var weeks = curr_mon.getWeeks();
+			var starterDate = curr_mon.getDateObject(1).getSunday().getDate();
+			var date = 0;
+			var ticker = 1;			
+			for(var w in weeks)
+			{
+				
+				var days = weeks[w].getDates();
+				// days contains normal JavaScript Date objects.
+		 
+				//alert("Week starting on "+days[0]);
+				
+				var tr = document.createElement("tr");
+				tr.setAttribute("class", "week");
+				table.appendChild(tr);
+				
+				for(var d in days)
+				{
+					// You can see console.log() output in your JavaScript debugging tool, like Firebug,
+					// WebWit Inspector, or Dragonfly.
+					
+					console.log(days[d].toISOString());
+					
+					var td = document.createElement("td");
+					tr.appendChild(td);
+					//First Day of the Month
+					var startDay = curr_mon.getDateObject(0).getDay();	
+					//Last Day of the Month
+					var lastDay = curr_mon.nextMonth().getDateObject(0).getDate();		
+					//Checking to see if date is greater than the 1st day of the month
+					if (startDay > date)
+					{
+						var starternum = document.createTextNode(starterDate);						
+						td.append(starternum.textContent);
+						td.setAttribute("class", "week past");
+						starterDate++;
+					}
+					else 
+					{
+						var monthDate = curr_mon.getDateObject(ticker).getDate();						
+						var num = document.createTextNode(monthDate);
+						td.append(num.textContent);
+						if (ticker > lastDay) 
+						{
+							td.setAttribute("class", "week future");
+						}
+						else
+						{
+							td.setAttribute("class", "week current");
+						}
+						
+						ticker++;
+					}
+					
+					startDay++;
+					date++;
+				}
+			}
+			
+		}
+
+
+	/*	// Get the modal
+		var modal = document.getElementById('myModal');
+		// Get the button that opens the modal
+		var btn = document.getElementById("agenda");
+		// When the user clicks the button, open the modal 
+		function open() 
+		{ 
+		    for (var i = 0; i < events.length; i++) 
+		 	{
+    			var entry[i] = time[i] + '-- '+ title[i];
+    			$(".modal-body").append('<li>'+entry[i]+'</li>');
+    		}
+
+		    modal.style.display = "block";
+		}
+
+		// When the user clicks on <span> (x), close the modal
+		function close() 
+		{
+		    modal.style.display = "none";
+		}*/
+
+
+
+
+
+
+
+
+			function prev(event)
+			{
+				clearCalendar();
+				curr_mon = curr_mon.prevMonth(); 
+				updateCalendar();
+				document.getElementById("month").innerHTML = month[curr_mon.month];
+				document.getElementById("year").innerHTML = curr_mon.year;
+				//alert("The new month is "+curr_mon.month+" "+curr_mon.year);
+			}
+
+			function next(event)
+			{
+				clearCalendar();
+				curr_mon = curr_mon.nextMonth(); 
+				updateCalendar();
+				document.getElementById("month").innerHTML = month[curr_mon.month];
+				document.getElementById("year").innerHTML = curr_mon.year;
+				//alert("The new month is "+curr_mon.month+" "+curr_mon.year);
+			}
+	
+			/*function createEvent() 
+			{
+				var xmlHttp = new XMLHttpRequest();
+				xmlHttp.open("POST", "createEvent.php", true);
+
+			}*/
+			
+/*			function createEvent(category) 
+			{
+				// alert("createEvent!");
+				// var title = document.getElementsByName("eventTitle")[0].value;
+				// var date = document.getElementsByName("eventDate")[0].value;
+				// var time = document.getElementsByName("eventTime")[0].value;
+				var entry = time + '-- '+ title;				
+				$(title).append('<button class="w3-button w3-tiny w3-circle w3-blue" title ='+entry+'>O</button>');
+				// var xmlHttp = new XMLHttpRequest();
+				// xmlHttp.open("POST", "createEvent.php", true);
+				// xmlHttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+				// xmlHttp.send("title="+title+"&date="+date+"&time="+time);
+			}*/
+
+/*			function deleteEvent(category) 
+			{
+				$('#deleteEvent').append("<form action='delete.php' method='POST'>");
+    			$('#deleteEvent form').append("<div class='delete_form'>Delete from following list of events: <div/>");
+    			$('#deleteEvent form').append('<select id="mySelect" size='+events.length+'>');
+    			for (var i = 0; i < events.length; i++) 
+    			{
+    				('#deleteEvent form').append('<option>'+events[i]+'</option>');
+    			}
+    			$('#deleteEvent form').append("</select>");
+    			$('#deleteEvent form').append("</form>");
+    			('#deleteEvent form').toggle();
+			}*/
+
+/*			function shareEvent(category) 
+			{
+				$('#shareEvent').append("<form action='share.php' method='POST'>");
+    			$('#shareEvent form').append("<div class='delete_form'>Share from following list of events: <div/>");
+    			$('#shareeEvent form').append('<select id="mySelect" size='+events.length+'>');
+    			for (var i = 0; i < events.length; i++) 
+    			{
+    				('#shareeEvent form').append('<option>'+events[i]+'</option>');
+    			}
+    			$('#shareEvent form').append("</select>");
+    			$('#shareEvent form').append("</form>");
+    			('#shareEvent form').toggle();
+			}*/
+
+
+			function fetchEvents() 
+			{
+				var xmlHttp = new XMLHttpRequest();
+				xmlHttp.open("GET", "loadEvents.php", true);
+				xmlHttp.addEventListener("load", eventsCallback, false);
+				xmlHttp.send(null);
+			}
+			
+			function eventsCallback() 
+			{		
+			}
+			
+			function clearCalendar() 
+			{
+				document.getElementById("calendarHolder").innerHTML = "";
+			}
+
+			function login() {
+				var username = document.getElementsByName("lusername")[0].value;
+				var password = document.getElementsByName("lpassword")[0].value;
+				var dataString = "username=" + encodeURIComponent(username) + "&password=" + encodeURIComponent(password);
+				var xmlHttp = new XMLHttpRequest();
+				xmlHttp.open("POST", "login.php", true);
+				xmlHttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+				xmlHttp.addEventListener("load", function(event){
+					var jsonData = JSON.parse(event.target.responseText); // parse the JSON into a JavaScript object
+					if(jsonData.success){  // in PHP, this was the "success" key in the associative array; in JavaScript, it's the .success property of jsonData
+						alert("You've been Logged In!");
+						alert(jsonData.username);
+						$(".login").click(login2);						
+					}else{
+						alert("You were not logged in.  "+jsonData.message);
+					}
+				}, false); // Bind the callback to the load event
+				xmlHttp.send(dataString);
+			}
+
+			function login2(event) 
+			{
+				$("#dropdown_login").toggle();
+				$("#dropdown_register").hide();
+				$("#login").hide();
+				$("#register").hide();
+				//$(".current").append();
+				$(".tab").append('<button class="tablinks user" id="personal" >Personal</button>');
+				$(".tab").append('<button class="tablinks user" id = "work" >Work</button>');
+				$(".tab").append('<button class="tablinks user" id = "agenda" >Agenda View</button>');
+				$("#agenda").click(open);
+				$("#agenda").dblclick(close);
+				$(".tab").append('<button class="tablinks user"  id = "new_cal" >New Calendar <strong>+</strong></button>');
+				$(".tab").append('<button type = "button user" class="dropdown_create user" id="createEvent">Create Event</button>');
+				
+				$(".dropdown_create").append('<div id="crEvForm">');
+				$(".dropdown_create").append('<h3 id="crEv"></h3>');
+				$(".dropdown_create").append('<label id="titleLabel"></label><br>');
+				$(".dropdown_create").append('<label id="dateLabel"></label><br');
+				$(".dropdown_create").append('<label id="timeLabel"></label><br>');
+				$(".dropdown_create").append('</div>');
+
+
+
+				$("#createEvent form").click(createEvent);
+				$(".tab").append('<button type = "button user" class="dropdown_share user" id="shareEvent">Share Event</button>');
+				$("#deleteEvent form").click(shareEvent);
+				$(".tab").append('<button type = "button user" class = "delete user" id="deleteEvent">Delete Event</button>');
+				//$("#deleteEvent form").click(deleteEvent);
+				$(".tab").append('<button type = "button user" id="logout">Logout</button>');
+				$("#new_cal").click(new_calendar);
+				$("#logout").click(logout);
+				
+			}
+
+			function register(event) 
+			{
+				$("#dropdown_register").toggle();
+			}
+
+
+			function logout(event) 
+			{
+				$(".user").hide();
+				$("#dropdown_login").toggle();
+				$("#dropdown_register").toggle();
+				$("#login").show();
+				$("#register").show();
+				$("#logout").hide();
+
+			}
+
+			function cal_toggle(event)
+			{
+				this.toggle();
+			}
+
+			function new_calendar(event)
+			{
+				var cal_name = prompt("Enter New Calendar Name","New Calendar");
+				if (cal_name != null && cal_name != "New Calendar") 
+				{
+					$("#new_cal").before('<button class="tablinks user" class="new_cal" >'+cal_name+'</button>');
+					alert(cal_name);
+
+
+				}
+				else
+				{
+					alert("Please try again.");
+				}
+				
+			}
+
+
+		</script>
+		<br>
+		<br>
+	</body>
+</html>

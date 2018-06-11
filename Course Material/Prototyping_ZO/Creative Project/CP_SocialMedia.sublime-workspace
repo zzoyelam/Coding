@@ -1,0 +1,745 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"e",
+				"events"
+			],
+			[
+				"currMON",
+				"curr_mon"
+			],
+			[
+				"eve",
+				"event"
+			],
+			[
+				"ca",
+				"category"
+			],
+			[
+				"in",
+				"input"
+			],
+			[
+				"lo",
+				"loginView"
+			],
+			[
+				"log",
+				"login_2"
+			],
+			[
+				"c",
+				"category"
+			],
+			[
+				"dro",
+				"dropdown_create"
+			],
+			[
+				"mo",
+				"modal-body"
+			],
+			[
+				"a",
+				"agenda"
+			],
+			[
+				"op",
+				"open"
+			],
+			[
+				"cu",
+				"current"
+			],
+			[
+				"curr",
+				"current"
+			],
+			[
+				"cur",
+				"current"
+			],
+			[
+				"cl",
+				"click"
+			],
+			[
+				"dele",
+				"deleteEvent"
+			],
+			[
+				"se",
+				"select"
+			],
+			[
+				"fo",
+				"for\tfor (…) {…} (Improved Native For-Loop)"
+			],
+			[
+				"g",
+				"getDay"
+			],
+			[
+				"la",
+				"lastDay"
+			],
+			[
+				"mon",
+				"monthDate"
+			],
+			[
+				"te",
+				"testDay"
+			],
+			[
+				"star",
+				"startDay"
+			],
+			[
+				"new",
+				"new_cal"
+			],
+			[
+				"cal",
+				"cal_name"
+			],
+			[
+				"tab",
+				"tab"
+			],
+			[
+				"l",
+				"label\tTag"
+			],
+			[
+				"re",
+				"register"
+			],
+			[
+				"do",
+				"dropdown_login"
+			],
+			[
+				"i",
+				"input\tTag"
+			],
+			[
+				"h",
+				"height"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"is",
+				"toISOString"
+			],
+			[
+				"d",
+				"display"
+			],
+			[
+				"col",
+				"color"
+			],
+			[
+				"start",
+				"start_week"
+			],
+			[
+				"sta",
+				"start_week"
+			],
+			[
+				"start_",
+				"start_mon"
+			],
+			[
+				"th",
+				"th"
+			],
+			[
+				"get",
+				"get\tGet Elements"
+			],
+			[
+				"td",
+				"td1"
+			],
+			[
+				"day",
+				"day_after"
+			],
+			[
+				"da",
+				"day_after"
+			],
+			[
+				"for",
+				"for\tfor (…) {…} (Improved Native For-Loop)"
+			],
+			[
+				"if",
+				"if\tif"
+			],
+			[
+				"to",
+				"toString"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"ta",
+				"table"
+			],
+			[
+				"T",
+				"Tue"
+			],
+			[
+				"getDa",
+				"getDay"
+			],
+			[
+				"D",
+				"Date"
+			],
+			[
+				"getD",
+				"getDate"
+			],
+			[
+				"Mon",
+				"Month"
+			],
+			[
+				"t",
+				"top"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"pr",
+				"prev"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"tom_",
+				"tom_code"
+			],
+			[
+				"s",
+				"state"
+			],
+			[
+				"x",
+				"xmlDocument"
+			],
+			[
+				"f",
+				"function"
+			],
+			[
+				"va",
+				"value"
+			],
+			[
+				"ope",
+				"operator"
+			],
+			[
+				"ch",
+				"check"
+			],
+			[
+				"n",
+				"num2"
+			],
+			[
+				"num",
+				"num1"
+			],
+			[
+				"fun",
+				"fun\tFunction"
+			],
+			[
+				"M",
+				"MsgBox"
+			],
+			[
+				"cle",
+				"clearInterval"
+			],
+			[
+				"dict",
+				"dict2\tforstmt"
+			],
+			[
+				"read",
+				"readlines\tfunction"
+			],
+			[
+				"p",
+				"players"
+			],
+			[
+				"wo",
+				"word2\tforstmt"
+			],
+			[
+				"w",
+				"word\tforstmt"
+			],
+			[
+				"fin",
+				"findall\tfunction"
+			],
+			[
+				"Re",
+				"Regex2\tstatement"
+			],
+			[
+				"no",
+				"None\tkeyword"
+			],
+			[
+				"fru",
+				"fruit_size\tstatement"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "import os\nimport sys\nimport subprocess\nimport reimport simplejson\n",
+			"file": "socialmedia.py",
+			"file_size": 21,
+			"file_write_time": 131457498250797952,
+			"settings":
+			{
+				"buffer_size": 66,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "import os"
+			}
+		},
+		{
+			"file": "/C/Python/Python36/Lib/site-packages/django/conf/project_template/manage.py-tpl",
+			"settings":
+			{
+				"buffer_size": 816,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				],
+				[
+					"Packages/User/JavaScript.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/User/JavaScript.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 291.0,
+		"last_filter": "Package Control: in",
+		"selected_items":
+		[
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			],
+			[
+				"sublim",
+				"SublimeREPL: Node"
+			],
+			[
+				"Package Control:",
+				"Package Control: Install Package"
+			],
+			[
+				"pyt",
+				"Build With: Python"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 1056.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Python/Python36/Scripts/django-admin.py",
+		"/C/django-master.tar/django-master/tests/i18n/sampleproject/manage.py",
+		"/C/Users/zoyel/Documents/summer2017-module5-group-441310-451288/calendar.css",
+		"/C/Users/zoyel/Documents/summer2017-module5-group-441310-451288/calendar.html",
+		"/C/Users/zoyel/Documents/summer2017-module5-group-441310-451288/createEvent.php",
+		"/C/Users/zoyel/Documents/CSE 330/Mod6/static_server.js",
+		"/C/Users/zoyel/Documents/CSE 330/Mod6/phpinfo.php",
+		"/C/Users/zoyel/Documents/CSE 330/Module_5/calendar_updated.html",
+		"/C/Users/zoyel/Documents/CSE 330/Module_5/cal_style.css",
+		"/C/Users/zoyel/AppData/Roaming/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
+		"/C/Users/zoyel/Documents/CSE 330/Module_5/calendar.js",
+		"/C/Users/zoyel/Documents/CSE 330/java_calculator.html",
+		"/C/Users/zoyel/Documents/summer2017-module5-group-441310-451288/calendar.js",
+		"/C/Users/zoyel/Documents/CSE 330/Module_5/calendar.min.js",
+		"/C/Users/zoyel/Documents/CSE 330/Module_5/calendar.html",
+		"/C/Users/zoyel/Documents/CSE 330/mod5.html",
+		"/C/Users/zoyel/Documents/CSE 330/test.html",
+		"/C/Users/zoyel/Documents/CSE 330/Module_4/mod4.py",
+		"/C/Users/zoyel/AppData/Roaming/Sublime Text 3/Packages/SublimeREPL/config/NodeJS/repl.js",
+		"/C/Users/zoyel/Documents/CSE 330/mod5.js",
+		"/C/Users/zoyel/Documents/CSE 330/mod5",
+		"/C/Users/zoyel/AppData/Roaming/Sublime Text 3/Packages/SublimeREPL/SublimeREPL.sublime-settings",
+		"/C/Users/zoyel/AppData/Roaming/Sublime Text 3/Packages/User/JavaScript.sublime-build",
+		"/C/Users/zoyel/Documents/CSE 330/Module_4/Mod4.sublime-project",
+		"/C/Users/zoyel/Downloads/re2-0.2.22.tar/dist/re2-0.2.22/README.rst",
+		"/C/Users/zoyel/AppData/Roaming/Sublime Text 3/Packages/Anaconda/Anaconda.sublime-settings",
+		"/C/Users/zoyel/Documents/CSE 330/Module_3/database.php",
+		"/C/Users/zoyel/Documents/CSE 330/Module_3/guest.php",
+		"/C/Users/zoyel/Documents/CSE 330/Module_3/logout.php",
+		"/C/Users/zoyel/Documents/CSE 330/Module_3/site_login.php",
+		"/C/Users/zoyel/Documents/CSE 330/Module_3/new_account.php",
+		"/C/Users/zoyel/AppData/Roaming/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/C/Users/zoyel/AppData/Roaming/Sublime Text 3/Packages/Anaconda/README.md",
+		"/C/Users/zoyel/AppData/Roaming/Sublime Text 3/Packages/Anaconda/Preferences.sublime-settings",
+		"/C/Users/zoyel/AppData/Roaming/Sublime Text 3/Packages/User/Anaconda.sublime-settings",
+		"/C/Users/zoyel/Documents/CSE 330/Module_3/mysql_login.php",
+		"/C/Users/zoyel/Documents/CSE 330/Module_3/newuser.php",
+		"/C/Users/zoyel/Documents/CSE 330/Module_4/Module4.sublime-project",
+		"/C/Users/zoyel/AppData/Roaming/Sublime Text 3/Packages/User/EnvironmentSettings.sublime-settings",
+		"/C/Users/zoyel/AppData/Roaming/Sublime Text 3/Packages/Anaconda/LICENSE",
+		"/C/Users/zoyel/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/zoyel/Documents/CSE 330/Module_4/m4",
+		"/C/Users/zoyel/Documents/CSE 330/Module_3/login.php",
+		"/C/Users/zoyel/Documents/summer2017-module2-group-441310/user.php",
+		"/C/Users/zoyel/Documents/CSE 330/Mod1",
+		"/C/Users/zoyel/Documents/CSE 330/Module 1/birthday.html",
+		"/C/cygwin64/home/zoyel/.ssh/id_rsa.pub",
+		"/C/Users/zoyel/Documents/summer2017-module3-individual-441310/Tables"
+	],
+	"find":
+	{
+		"height": 64.0
+	},
+	"find_in_files":
+	{
+		"height": 176.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"}\n",
+			"curr",
+			"open",
+			"agenda",
+			"CURRMON",
+			"createEvent",
+			"create_eve",
+			"currmon",
+			"currmonth",
+			"curr",
+			"currmonth",
+			"hello",
+			"login_1",
+			"getsess",
+			"login",
+			"tolowercase",
+			"even",
+			"current",
+			"CreateEve",
+			"getDateObject",
+			"getDate",
+			"year",
+			"days",
+			"hide",
+			"createeve",
+			"alert",
+			"currentMonth",
+			"tablinks",
+			"atmoshpere",
+			"atmosphere",
+			");\n",
+			"interp",
+			"inter",
+			"stack",
+			"stackless"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"curr_mon"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "socialmedia.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 66,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								66,
+								66
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": ".",
+									"selector": "source.python - string - comment - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								}
+							],
+							"auto_name": "import os",
+							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/Python/Python36/Lib/site-packages/django/conf/project_template/manage.py-tpl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 816,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 602.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "CP_SocialMedia.sublime-project",
+	"replace":
+	{
+		"height": 120.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 300.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

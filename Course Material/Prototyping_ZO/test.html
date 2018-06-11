@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head> <title> Weather Widget </title>
+  <link rel="stylesheet" type="text/css" href="weather.css">
+  <script>
+    document.addEventListener("DOMContentLoaded", fetchWeather, false);
+    function fetchWeather(){
+        console.log("at fetchWeather");
+        var xmlHttp = new XMLHttpRequest();
+      	xmlHttp.open("GET", "http://classes.engineering.wustl.edu/cse330/content/weather_json.php", true);
+      	xmlHttp.addEventListener("load", ajaxCallback, false);
+      	xmlHttp.send(null);
+      }
+      //Callback function for fetchWeather. Process the JSON and use JS to manipulate
+      //DOM to display information
+      function ajaxCallback(event){
+        var weather = JSON.parse(event.target.responseText);
+        var updated = weather["updated"];
+        var loc = weather["location"];
+        var city = loc["city"];
+        var state = loc["state"];
+        document.getElementById("weather-loc").innerHTML = "<strong>" + city + "</strong> , " + state;
+        var atmosphere = weather["atmosphere"];
+        var humidity = atmosphere["humidity"];
+        var visibility = atmosphere["visibility"];
+        var pressure = atmosphere["pressure"];
+        document.getElementById("weather-humidity").innerHTML = humidity;
+        var current = weather["current"];
+        var code = current["code"];
+        var text = current["text"];
+        var temp = current["temp"];
+        var date = current["date"];
+        document.getElementById("weather-temp").innerHTML = temp;
+        var tomorrow = weather["tomorrow"];
+        var tomorrowCode = tomorrow["code"];
+        var tomorrowText = tomorrow["text"];
+        var tomorrowLow = tomorrow["low"];
+        var tomorrowHigh = tomorrow["high"];
+        var tomorrowPic ="http://us.yimg.com/i/us/nws/weather/gr/" + tomorrowCode + "ds.png";
+        document.getElementById("weather-tomorrow").src = tomorrowPic;
+        var dayafter = weather["dayafter"];
+        var dayAfterCode = dayafter["code"];
+        var dayAfterText = dayafter["text"];
+        var dayAfterLow = dayafter["low"];
+        var dayAfterHigh = dayafter["high"];
+        var dayAfterPic ="http://us.yimg.com/i/us/nws/weather/gr/" + dayAfterCode + "ds.png";
+        document.getElementById("weather-dayaftertomorrow").src = dayAfterPic;
+      }
+  </script>
+</head>
+
+<body>
+  <div class="weather" id="weatherWidget">
+  	<div class="weather-loc" id="weather-loc"></div>
+  	<div class="weather-humidity" id="weather-humidity"></div>
+  	<div class="weather-temp" id="weather-temp"></div>
+  	<img class="weather-tomorrow" id="weather-tomorrow" src="#" alt="" />
+  	<img class="weather-dayaftertomorrow" id="weather-dayaftertomorrow" src="#" alt="" />
+  </div>
+<button id="refresh" type="button">Refresh</button>
+<script>
+  document.getElementById("refresh").addEventListener("click", fetchWeather, false);
+</script>
+</body>
+<html>

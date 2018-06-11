@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>JavaScript Calculator </title>
+		</head>
+
+		<body>
+			<form>
+				<INPUT ID= "num1" TYPE=Number >
+				<INPUT ID= "num2" TYPE=Number ><br>
+				<INPUT NAME= "operator" ID= "plus" TYPE=Radio > +
+				<INPUT NAME= "operator" ID= "minus" TYPE=Radio> -
+				<INPUT NAME= "operator" ID= "mult" TYPE=Radio> x
+				<INPUT NAME= "operator" ID= "div" TYPE=Radio> /
+				<p id="result"></p>
+			</form>
+		</body>
+
+		<script>
+		//Mathematical Operations
+			function plus(a,b) 
+			{
+				document.getElementById("result").innerHTML = parseInt(a)+parseInt(b);
+			}
+
+			function minus(a,b) 
+			{
+				document.getElementById("result").innerHTML = a-b;
+			}
+
+			function mult(a,b) 
+			{
+				document.getElementById("result").innerHTML = a*b;
+			}
+
+			function div(a,b) 
+			{
+				if(a!= 0 && b== 0 || a== 0 && b== 0)
+				{
+					document.getElementById("result").innerHTML = "Undefined";
+				}
+				else
+				{
+					document.getElementById("result").innerHTML = a/b;
+				}
+			}
+		
+
+			function check()
+			{
+				//Determining the value of the 1st number
+			var a = document.getElementById("num1").value;
+			
+		//Determining the value of the 2nd number
+			var b = document.getElementById("num2").value;
+			//console.log(b);
+				//Determining the operator chosen
+				var operator = document.getElementsByName("operator");
+				//console.log(operator[0]);
+				//document.write(operator[0].id)
+				
+				for (i = 0; i < operator.length; i++) 
+				{
+    				if (operator[i].checked) 
+    				{
+        				var oper = operator[i].id;
+        				//document.getElementById("result").innerHTML = oper;
+        				//document.write(oper);
+    				}
+				}	
+				switch(oper)
+				{
+					case "plus":
+						plus(a,b);				
+						break;
+					case "minus":
+						minus(a,b);
+						
+						break;
+					case "mult":
+						mult(a,b);
+						
+						break;
+					case "div":
+						div(a,b);
+						
+						break;
+				}
+
+			}
+
+
+		//Calling upon the changes when the operator is changed
+		//Calling upon the changes when either of the input values are changed
+		
+		
+			document.getElementById("num1").addEventListener("change", check,false);
+			document.getElementById("num2").addEventListener("change", check,false);
+			document.getElementsByName("operator")[0].addEventListener("click", check,false);
+			document.getElementsByName("operator")[1].addEventListener("click", check,false);
+			document.getElementsByName("operator")[2].addEventListener("click", check,false);
+			document.getElementsByName("operator")[3].addEventListener("click", check,false);
+
+			
+		
+			
+
+			
+
+			
+		</script>
+
+			
+	</html>

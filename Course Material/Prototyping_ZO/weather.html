@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Weather Widget </title>
+		</head>
+
+		<div class="weather" id="weatherWidget">
+			<div class="weather-loc" id=loc></div>
+			<div class="weather-humidity" id=humidity></div>
+			<div class="weather-temp" id=temp></div>
+			<img class="weather-tomorrow" id=tomorrow src="#" alt=""/>
+			<img class="weather-dayafter"  id=dayafter src="#" alt=""/>
+		</div><br>
+		<button id="myBtn">Refresh</button>
+
+		<body>
+		<!-- CSS Styling -->
+			<style type="text/css">
+				.weather
+				{
+				    width: 200px;
+				    border: 1px solid black;
+				    padding: 5px;
+				    border-radius: 10px;
+				    text-align: center;
+				}
+
+				.weather-loc
+				{
+    				font-size: 18px;
+				}
+
+				.weather-temp
+				{
+    				float:left;
+				}
+				.weather-temp::before
+				{
+    				content: 'Currently ';
+				}
+
+				.weather-humidity
+				{
+				    float: right;
+				}
+				.weather-humidity::before
+				{
+				    content: 'Humidity: ';
+				}
+				.weather-humidity::after
+				{
+				    content: '%';
+				}
+			</style>
+		</body>
+
+
+		<!-- JavaScript Portion --> 
+		<script>
+
+			//Reloads the information sent to the webpage
+			function fetchWeather() 
+			{
+				var xmlHttp = new XMLHttpRequest();
+				xmlHttp.open("GET", "http://classes.engineering.wustl.edu/cse330/content/weather_json.php", true);
+				xmlHttp.addEventListener("load", ajaxCallback, false);
+				xmlHttp.send(null);
+			}
+
+			//Collects the data from the server
+			function ajaxCallback(event)
+			{		//The outmost identifiers for the JSON
+					var xmlDocument = JSON.parse(event.target.responseText);
+					console.log(xmlDocument);
+ 					
+ 					//The time that the refresh was requested
+ 					var updated = xmlDocument["updated"];
+ 					
+ 					//The location of where the weather is coming from
+        			var location = xmlDocument["location"];
+        			var city = location["city"];
+        			var state = location["state"];
+        			document.getElementById("loc").innerHTML ="<strong>" +city + "</strong>" + ", "+ state;
+        			
+        			//Characteristics of the wind
+        			var wind = xmlDocument["wind"];
+        			var chill = xmlDocument["chill"];
+        			var direction = xmlDocument["direction"];
+        			var speed = xmlDocument["speed"];
+
+        			//Characteristics of the atmosphere
+        			var atmosphere = xmlDocument["atmosphere"];
+        			var humidity = atmosphere["humidity"];
+        			var visibility = atmosphere["visibility"];
+        			var pressure = atmosphere["pressure"];
+        			document.getElementById("humidity").innerHTML = humidity;
+
+
+        			//Current key
+        			var current = xmlDocument["current"];
+        			var curr_code = current["code"];
+        			var curr_txt = current["text"];
+        			var curr_temp = current["temp"];
+        			var curr_date = current["date"];
+        		 	document.getElementById("temp").innerHTML = curr_temp;
+
+
+        			//Tomorrow key
+        			var tomorrow = xmlDocument["tomorrow"];
+        			var tom_code = tomorrow["code"];
+        			var tom_txt = tomorrow["text"];
+        			var tom_low = tomorrow["low"];
+        			var tom_hi = tomorrow["high"];
+        			document.getElementById("tomorrow").src =  "http://us.yimg.com/i/us/nws/weather/gr/"+tom_code+"ds.png";
+
+
+        			//Day After Tomorrow Key
+        			var dayafter = xmlDocument["dayafter"];
+        			var aft_code = dayafter["code"];
+        			var aft_txt = dayafter["text"];
+        			var aft_low = dayafter["low"];
+        			var aft_hi = dayafter["high"];
+        			document.getElementById("dayafter").src =  "http://us.yimg.com/i/us/nws/weather/gr/"+tom_code+"ds.png";
+
+
+        			//Coming from these folks
+        			var credit = xmlDocument["credit"];
+
+ 			}
+ 			//http://us.yimg.com/i/us/nws/weather/gr/##ds.png
+
+
+			document.addEventListener("DOMContentLoaded", fetchWeather, false);
+			var x = document.getElementById("myBtn");
+			x.addEventListener("click", fetchWeather,false);
+
+		</script>
+
+
+
+			
+	</html>

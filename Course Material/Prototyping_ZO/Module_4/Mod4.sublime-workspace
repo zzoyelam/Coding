@@ -1,0 +1,311 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"dict",
+				"dict2\tforstmt"
+			],
+			[
+				"s",
+				"startswith"
+			],
+			[
+				"read",
+				"readlines\tfunction"
+			],
+			[
+				"c",
+				"close\tfunction"
+			],
+			[
+				"p",
+				"players"
+			],
+			[
+				"wo",
+				"word2\tforstmt"
+			],
+			[
+				"w",
+				"word\tforstmt"
+			],
+			[
+				"fin",
+				"findall\tfunction"
+			],
+			[
+				"Re",
+				"Regex2\tstatement"
+			],
+			[
+				"no",
+				"None\tkeyword"
+			],
+			[
+				"fru",
+				"fruit_size\tstatement"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/C/Users/zoyel/Documents/CSE 330/mod5",
+			"settings":
+			{
+				"buffer_size": 171,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "var a = \"hello\";"
+			}
+		}
+	],
+	"build_system": "Packages/Python/Python.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 599.0,
+		"last_filter": "pyt",
+		"selected_items":
+		[
+			[
+				"pyt",
+				"Build With: Python"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 800.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/zoyel/AppData/Roaming/Sublime Text 3/Packages/User/JavaScript.sublime-build",
+		"/C/Users/zoyel/Documents/CSE 330/Module_4/Mod4.sublime-project",
+		"/C/Users/zoyel/Downloads/re2-0.2.22.tar/dist/re2-0.2.22/README.rst",
+		"/C/Users/zoyel/Documents/CSE 330/Module_4/mod4.py",
+		"/C/Users/zoyel/AppData/Roaming/Sublime Text 3/Packages/Anaconda/Anaconda.sublime-settings",
+		"/C/Users/zoyel/Documents/CSE 330/Module_3/database.php",
+		"/C/Users/zoyel/Documents/CSE 330/Module_3/guest.php",
+		"/C/Users/zoyel/Documents/CSE 330/Module_3/logout.php",
+		"/C/Users/zoyel/Documents/CSE 330/Module_3/site_login.php",
+		"/C/Users/zoyel/Documents/CSE 330/Module_3/new_account.php",
+		"/C/Users/zoyel/AppData/Roaming/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/C/Users/zoyel/AppData/Roaming/Sublime Text 3/Packages/Anaconda/README.md",
+		"/C/Users/zoyel/AppData/Roaming/Sublime Text 3/Packages/Anaconda/Preferences.sublime-settings",
+		"/C/Users/zoyel/AppData/Roaming/Sublime Text 3/Packages/User/Anaconda.sublime-settings",
+		"/C/Users/zoyel/Documents/CSE 330/Module_3/mysql_login.php",
+		"/C/Users/zoyel/Documents/CSE 330/Module_3/newuser.php",
+		"/C/Users/zoyel/Documents/CSE 330/Module_4/Module4.sublime-project",
+		"/C/Users/zoyel/AppData/Roaming/Sublime Text 3/Packages/User/EnvironmentSettings.sublime-settings",
+		"/C/Users/zoyel/AppData/Roaming/Sublime Text 3/Packages/Anaconda/LICENSE",
+		"/C/Users/zoyel/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/zoyel/Documents/CSE 330/Module_4/m4",
+		"/C/Users/zoyel/Documents/CSE 330/Module_3/login.php",
+		"/C/Users/zoyel/Documents/summer2017-module2-group-441310/user.php",
+		"/C/Users/zoyel/Documents/CSE 330/Mod1",
+		"/C/Users/zoyel/Documents/CSE 330/Module 1/birthday.html",
+		"/C/cygwin64/home/zoyel/.ssh/id_rsa.pub",
+		"/C/Users/zoyel/Documents/summer2017-module3-individual-441310/Tables"
+	],
+	"find":
+	{
+		"height": 39.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"interp",
+			"inter",
+			"stack",
+			"stackless"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/C/Users/zoyel/Documents/CSE 330/mod5",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 171,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								171,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_name": "var a = \"hello\";",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 39.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 602.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/User/JavaScript.sublime-build",
+	"project": "Mod4.sublime-project",
+	"replace":
+	{
+		"height": 74.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 300.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

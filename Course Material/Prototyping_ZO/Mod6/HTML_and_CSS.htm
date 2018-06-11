@@ -1,0 +1,728 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="Content-Style-Type" content="text/css" />
+		<meta name="generator" content="MediaWiki 1.15.1" />
+		<meta name="keywords" content="HTML and CSS,HTML Forms" />
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="search" type="application/opensearchdescription+xml" href="/cse330/opensearch_desc.php" title="CSE330 Wiki (en)" />
+		<link rel="alternate" type="application/rss+xml" title="CSE330 Wiki RSS Feed" href="/cse330/index.php?title=Special:RecentChanges&amp;feed=rss" />
+		<link rel="alternate" type="application/atom+xml" title="CSE330 Wiki Atom Feed" href="/cse330/index.php?title=Special:RecentChanges&amp;feed=atom" />
+		<title>HTML and CSS - CSE330 Wiki</title>
+		<link rel="stylesheet" href="/cse330/skins/common/shared.css?207" type="text/css" media="screen" />
+		<link rel="stylesheet" href="/cse330/skins/common/commonPrint.css?207" type="text/css" media="print" />
+		<link rel="stylesheet" href="/cse330/skins/monobook/main.css?207" type="text/css" media="screen" />
+		<!--[if lt IE 5.5000]><link rel="stylesheet" href="/cse330/skins/monobook/IE50Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 5.5000]><link rel="stylesheet" href="/cse330/skins/monobook/IE55Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 6]><link rel="stylesheet" href="/cse330/skins/monobook/IE60Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 7]><link rel="stylesheet" href="/cse330/skins/monobook/IE70Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<link rel="stylesheet" href="/cse330/index.php?title=MediaWiki:Common.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" />
+		<link rel="stylesheet" href="/cse330/index.php?title=MediaWiki:Print.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" media="print" />
+		<link rel="stylesheet" href="/cse330/index.php?title=MediaWiki:Monobook.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=18000&amp;action=raw&amp;maxage=18000" type="text/css" />
+		<link rel="stylesheet" href="/cse330/index.php?title=-&amp;action=raw&amp;maxage=18000&amp;gen=css" type="text/css" />
+		<!--[if lt IE 7]><script type="text/javascript" src="/cse330/skins/common/IEFixes.js?207"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+
+		<script type= "text/javascript">/*<![CDATA[*/
+		var skin = "monobook";
+		var stylepath = "/cse330/skins";
+		var wgArticlePath = "/cse330/index.php/$1";
+		var wgScriptPath = "/cse330";
+		var wgScript = "/cse330/index.php";
+		var wgVariantArticlePath = false;
+		var wgActionPaths = {};
+		var wgServer = "http://classes.engineering.wustl.edu";
+		var wgCanonicalNamespace = "";
+		var wgCanonicalSpecialPageName = false;
+		var wgNamespaceNumber = 0;
+		var wgPageName = "HTML_and_CSS";
+		var wgTitle = "HTML and CSS";
+		var wgAction = "view";
+		var wgArticleId = "23";
+		var wgIsArticle = true;
+		var wgUserName = null;
+		var wgUserGroups = null;
+		var wgUserLanguage = "en";
+		var wgContentLanguage = "en";
+		var wgBreakFrames = false;
+		var wgCurRevisionId = 2269;
+		var wgVersion = "1.15.1";
+		var wgEnableAPI = true;
+		var wgEnableWriteAPI = true;
+		var wgSeparatorTransformTable = ["", ""];
+		var wgDigitTransformTable = ["", ""];
+		var wgRestrictionEdit = [];
+		var wgRestrictionMove = [];
+		/*]]>*/</script>
+
+		<script type="text/javascript" src="/cse330/skins/common/wikibits.js?207"><!-- wikibits js --></script>
+		<!-- Head Scripts -->
+		<script type="text/javascript" src="/cse330/skins/common/ajax.js?207"></script>
+<style type="text/css">/*<![CDATA[*/
+.source-html4strict {line-height: normal;}
+.source-html4strict li, .source-html4strict pre {
+	line-height: normal; border: 0px none white;
+}
+/**
+ * GeSHi Dynamically Generated Stylesheet
+ * --------------------------------------
+ * Dynamically generated stylesheet for html4strict
+ * CSS class: source-html4strict, CSS id: 
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ * --------------------------------------
+ */
+.source-html4strict .de1, .source-html4strict .de2 {font-family: monospace; font-weight: normal; font-style: normal; margin:0; padding:0; background:inherit;}
+.source-html4strict  {font-family: monospace;}
+.source-html4strict .imp {font-weight: bold; color: red;}
+.source-html4strict li, .source-html4strict li.li1 {font-weight: normal;}
+.source-html4strict li.li2 {font-weight: bold;}
+.source-html4strict .kw1 {color: #b1b100;}
+.source-html4strict .kw2 {color: #000000; font-weight: bold;}
+.source-html4strict .kw3 {color: #000066;}
+.source-html4strict .coMULTI {color: #808080; font-style: italic;}
+.source-html4strict .es0 {color: #000099; font-weight: bold;}
+.source-html4strict .br0 {color: #66cc66;}
+.source-html4strict .sy0 {color: #66cc66;}
+.source-html4strict .st0 {color: #ff0000;}
+.source-html4strict .nu0 {color: #cc66cc;}
+.source-html4strict .sc0 {color: #00bbdd;}
+.source-html4strict .sc1 {color: #ddbb00;}
+.source-html4strict .sc2 {color: #009900;}
+.source-html4strict .ln-xtra, .source-html4strict li.ln-xtra, .source-html4strict div.ln-xtra {background-color: #ffc;}
+.source-html4strict span.xtra { display:block; }
+
+/*]]>*/
+</style>
+<style type="text/css">/*<![CDATA[*/
+@import "/cse330/index.php?title=MediaWiki:Geshi.css&usemsgcache=yes&action=raw&ctype=text/css&smaxage=18000";
+/*]]>*/
+</style><style type="text/css">/*<![CDATA[*/
+.source-css {line-height: normal;}
+.source-css li, .source-css pre {
+	line-height: normal; border: 0px none white;
+}
+/**
+ * GeSHi Dynamically Generated Stylesheet
+ * --------------------------------------
+ * Dynamically generated stylesheet for css
+ * CSS class: source-css, CSS id: 
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ * --------------------------------------
+ */
+.source-css .de1, .source-css .de2 {font-family: monospace; font-weight: normal; font-style: normal; margin:0; padding:0; background:inherit;}
+.source-css  {font-family: monospace;}
+.source-css .imp {font-weight: bold; color: red;}
+.source-css li, .source-css li.li1 {font-weight: normal;}
+.source-css li.li2 {font-weight: bold;}
+.source-css .kw1 {color: #000000; font-weight: bold;}
+.source-css .kw2 {color: #993333;}
+.source-css .co1 {color: #a1a100;}
+.source-css .coMULTI {color: #808080; font-style: italic;}
+.source-css .es0 {color: #000099; font-weight: bold;}
+.source-css .br0 {color: #66cc66;}
+.source-css .sy0 {color: #66cc66;}
+.source-css .st0 {color: #ff0000;}
+.source-css .nu0 {color: #933;}
+.source-css .re0 {color: #cc00cc;}
+.source-css .re1 {color: #6666ff;}
+.source-css .re2 {color: #3333ff;}
+.source-css .re3 {color: #933;}
+.source-css .re4 {color: #933;}
+.source-css .ln-xtra, .source-css li.ln-xtra, .source-css div.ln-xtra {background-color: #ffc;}
+.source-css span.xtra { display:block; }
+
+/*]]>*/
+</style>
+<style type="text/css">/*<![CDATA[*/
+@import "/cse330/index.php?title=MediaWiki:Geshi.css&usemsgcache=yes&action=raw&ctype=text/css&smaxage=18000";
+/*]]>*/
+</style>		<script type="text/javascript" src="/cse330/index.php?title=-&amp;action=raw&amp;gen=js&amp;useskin=monobook"><!-- site js --></script>
+	</head>
+<body class="mediawiki ltr ns-0 ns-subject page-HTML_and_CSS skin-monobook">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 id="firstHeading" class="firstHeading">HTML and CSS</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From CSE330 Wiki</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>			<!-- start content -->
+			<p>You have probably used so-called "What-You-See-Is-What-You-Get" (WYSIWYG) web page editor before.  You select text, press the bold button, and voilà!  Your text is bold.  But what's really happening behing the scenes is that your editor is generating HTML and CSS code.  Indeed, every page you view on the internet is built using HTML and CSS.  In this guide, you will learn the principles of HTML and CSS and learn how they fit together to make a web page.
+</p>
+<table id="toc" class="toc" summary="Contents"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Basic_Structure_of_a_Web_Page"><span class="tocnumber">1</span> <span class="toctext">Basic Structure of a Web Page</span></a></li>
+<li class="toclevel-1"><a href="#Introduction_to_HTML"><span class="tocnumber">2</span> <span class="toctext">Introduction to HTML</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Tags"><span class="tocnumber">2.1</span> <span class="toctext">Tags</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Content_Elements"><span class="tocnumber">2.1.1</span> <span class="toctext">Content Elements</span></a></li>
+<li class="toclevel-3"><a href="#Void_Elements"><span class="tocnumber">2.1.2</span> <span class="toctext">Void Elements</span></a></li>
+<li class="toclevel-3"><a href="#Content_Tags_with_Optional_Closing_Tag"><span class="tocnumber">2.1.3</span> <span class="toctext">Content Tags with Optional Closing Tag</span></a>
+<ul>
+<li class="toclevel-4"><a href="#Why_to_Always_Include_Closing_Tags"><span class="tocnumber">2.1.3.1</span> <span class="toctext">Why to Always Include Closing Tags</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Attributes"><span class="tocnumber">2.2</span> <span class="toctext">Attributes</span></a></li>
+<li class="toclevel-2"><a href="#Commonly_Used_Tags"><span class="tocnumber">2.3</span> <span class="toctext">Commonly Used Tags</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Semantic_Elements"><span class="tocnumber">2.3.1</span> <span class="toctext">Semantic Elements</span></a></li>
+<li class="toclevel-3"><a href="#External_Media"><span class="tocnumber">2.3.2</span> <span class="toctext">External Media</span></a></li>
+<li class="toclevel-3"><a href="#Outlining_Elements"><span class="tocnumber">2.3.3</span> <span class="toctext">Outlining Elements</span></a></li>
+<li class="toclevel-3"><a href="#Miscellaneous_Elements"><span class="tocnumber">2.3.4</span> <span class="toctext">Miscellaneous Elements</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#High_School_Analogy"><span class="tocnumber">2.4</span> <span class="toctext">High School Analogy</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Introduction_to_CSS"><span class="tocnumber">3</span> <span class="toctext">Introduction to CSS</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Selectors"><span class="tocnumber">3.1</span> <span class="toctext">Selectors</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Pseudo-Classes"><span class="tocnumber">3.1.1</span> <span class="toctext">Pseudo-Classes</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Properties"><span class="tocnumber">3.2</span> <span class="toctext">Properties</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Units"><span class="tocnumber">3.2.1</span> <span class="toctext">Units</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#The_Box_Model"><span class="tocnumber">3.3</span> <span class="toctext">The Box Model</span></a></li>
+<li class="toclevel-2"><a href="#Typography"><span class="tocnumber">3.4</span> <span class="toctext">Typography</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Using_HTML_and_CSS_in_your_Web_Page"><span class="tocnumber">4</span> <span class="toctext">Using HTML and CSS in your Web Page</span></a>
+<ul>
+<li class="toclevel-2"><a href="#How_to_Include_CSS"><span class="tocnumber">4.1</span> <span class="toctext">How to Include CSS</span></a></li>
+<li class="toclevel-2"><a href="#Quick_and_Easy_Page_Layout"><span class="tocnumber">4.2</span> <span class="toctext">Quick and Easy Page Layout</span></a></li>
+<li class="toclevel-2"><a href="#The_HTML5_Shiv"><span class="tocnumber">4.3</span> <span class="toctext">The HTML5 Shiv</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Validation"><span class="tocnumber">5</span> <span class="toctext">Validation</span></a>
+<ul>
+<li class="toclevel-2"><a href="#But_why_don.27t.E2.80.A6"><span class="tocnumber">5.1</span> <span class="toctext">But why don't…</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<a name="Basic_Structure_of_a_Web_Page" id="Basic_Structure_of_a_Web_Page"></a><h2> <span class="mw-headline"> Basic Structure of a Web Page </span></h2>
+<p>The most basic web page is shown below.
+</p>
+<div dir="ltr" style="text-align: left;"><div class="source-html4strict" style="font-family: monospace;"><pre><span class="sc0">&lt;!DOCTYPE html&gt;</span>
+<span class="sc2"><span class="kw2">&lt;html&gt;</span></span>
+<span class="sc2"><span class="kw2">&lt;head&gt;</span></span>
+	<span class="sc2"><span class="kw2">&lt;title&gt;</span></span>My First Web Page<span class="sc2"><span class="kw2">&lt;/title&gt;</span></span>
+<span class="sc2"><span class="kw2">&lt;/head&gt;</span></span>
+<span class="sc2"><span class="kw2">&lt;body&gt;</span></span>
+	<span class="sc2"><span class="kw2">&lt;p&gt;</span></span>Hello World!<span class="sc2"><span class="kw2">&lt;/p&gt;</span></span>
+<span class="sc2"><span class="kw2">&lt;/body&gt;</span></span>
+<span class="sc2"><span class="kw2">&lt;/html&gt;</span></span></pre></div></div>
+<p>If you were to open this page in Firefox, you would see the following:
+</p><p><a href="/cse330/index.php/File:BasicHTML.png" class="image" title="File:BasicHTML.png‎"><img alt="File:BasicHTML.png‎" src="/cse330/images/8/80/BasicHTML.png" width="516" height="330" border="0" /></a>
+</p><p>This is the skeleton of every web page on the internet.  Things to notice:
+</p>
+<ul><li> The page begins with a DOCTYPE declaration.  This is a mandatory part of a web page, and it tells the browser what version of HTML to use when rendering your page.  In this case, the browser should use HTML 5.
+</li><li> The rest of the page consists of <i>tags</i>, in a hierarchy as follows:
+<ul><li> html
+<ul><li> head
+<ul><li> title
+</li></ul>
+</li><li> body
+<ul><li> p
+</li></ul>
+</li></ul>
+</li></ul>
+</li></ul>
+<p>You can view a web page's source code in your browser; in Firefox, the keyboard shortcut is Ctrl-U (or Command-U), and in Chrome, it is Alt-Ctrl-U (or Option-Command-U).
+</p>
+<a name="Introduction_to_HTML" id="Introduction_to_HTML"></a><h2> <span class="mw-headline"> Introduction to HTML </span></h2>
+<p>HTML stands for <i>HyperText Markup Language</i>.  Notice that HTML is <i>not</i> a programming language, so it doesn't have classes, methods, variables, or anything else you may be used to seeing.  Instead, HTML defines the <i>content</i> of a web page, and it uses <i>tags</i> to do that for you.
+</p>
+<a name="Tags" id="Tags"></a><h3> <span class="mw-headline"> Tags </span></h3>
+<p>Tags define the content of your page.  Each tag represents an <i>element</i>.  There are two main types of elements: content elements and empty elements.
+</p>
+<a name="Content_Elements" id="Content_Elements"></a><h4> <span class="mw-headline"> Content Elements </span></h4>
+<p>A <b>content element</b> is a container for other elements on your page, and it participates in the nesting hierarchy of a web page.  The general format looks like this:
+</p>
+<div dir="ltr" style="text-align: left;"><div class="source-html4strict" style="font-family: monospace;"><pre><span class="sc2">&lt;tagname&gt;</span> Contents <span class="sc2"><span class="kw2">&lt;</span><span class="sy0">/</span>tagname&gt;</span></pre></div></div>
+<p>If you've used BBCode before in online forums, HTML should look familiar, except that it uses angle brackets (less-than and greater-than signs) instead of square brackets.
+</p><p><b>Note:</b> There are actually several different types of content elements, including phrasing content, sectioning content, and flow content.  More details can be found <a href="https://www.w3.org/html/wg/drafts/html/master/dom.html#content-models" class="external text" title="https://www.w3.org/html/wg/drafts/html/master/dom.html#content-models" rel="nofollow">in the HTML5 spec</a>.
+</p>
+<a name="Void_Elements" id="Void_Elements"></a><h4> <span class="mw-headline"> Void Elements </span></h4>
+<p>A <b>void element</b> or <b>empty element</b> represents an element on your page that does not participate in the nesting hierarchy.  An empty element looks like this:
+</p>
+<div dir="ltr" style="text-align: left;"><div class="source-html4strict" style="font-family: monospace;"><pre><span class="sc2">&lt;tagname <span class="sy0">/</span><span class="kw2">&gt;</span></span></pre></div></div>
+<p>Although the trailing slash is optional on void/empty elements, it is considered best practice to include it, and it also makes it more clear what's a content element and what's a void element when reviewing your code.
+</p>
+<a name="Content_Tags_with_Optional_Closing_Tag" id="Content_Tags_with_Optional_Closing_Tag"></a><h4> <span class="mw-headline"> Content Tags with Optional Closing Tag </span></h4>
+<p>HTML has a quirk in that a few content tags, such as &lt;p&gt;, &lt;tbody&gt;, and &lt;li&gt;, do not require that the end tag be present.  In addition, both the opening and the closing tags &lt;html&gt;, &lt;head&gt;, and &lt;body&gt; may <i>sometimes</i> be omitted.  For example, the following code will pass the validator as a valid HTML5 document:
+</p>
+<div dir="ltr" style="text-align: left;"><div class="source-html4strict" style="font-family: monospace;"><pre><span class="sc0">&lt;!DOCTYPE html&gt;</span>
+<span class="sc2"><span class="coMULTI">&lt;!-- implicit &lt;html▷ --&gt;</span></span>
+<span class="sc2"><span class="coMULTI">&lt;!-- implicit &lt;head▷ --&gt;</span></span>
+	<span class="sc2"><span class="kw2">&lt;title&gt;</span></span>My Miniature Document<span class="sc2"><span class="kw2">&lt;/title&gt;</span></span>
+<span class="sc2"><span class="coMULTI">&lt;!-- implicit &lt;/head▷ because the &lt;body▷ is starting --&gt;</span></span>
+<span class="sc2"><span class="coMULTI">&lt;!-- implicit &lt;body▷ --&gt;</span></span>
+	<span class="sc2"><span class="kw2">&lt;div&gt;</span></span>
+		<span class="sc2"><span class="kw2">&lt;p&gt;</span></span>
+			Hello
+		<span class="sc2"><span class="coMULTI">&lt;!-- implicit &lt;/p▷ because a new &lt;p▷ is starting --&gt;</span></span>
+		<span class="sc2"><span class="kw2">&lt;p&gt;</span></span>
+			World
+		<span class="sc2"><span class="coMULTI">&lt;!-- implicit &lt;/p▷ because the parent is closing --&gt;</span></span>
+	<span class="sc2"><span class="kw2">&lt;/div&gt;</span></span>
+<span class="sc2"><span class="coMULTI">&lt;!-- implicit &lt;/body▷ because end of document --&gt;</span></span>
+<span class="sc2"><span class="coMULTI">&lt;!-- implicit &lt;/html▷ because end of document --&gt;</span></span></pre></div></div>
+<p>More information is in <a href="https://www.w3.org/TR/html5/syntax.html#optional-tags" class="external text" title="https://www.w3.org/TR/html5/syntax.html#optional-tags" rel="nofollow">the HTML5 spec</a>.
+</p>
+<a name="Why_to_Always_Include_Closing_Tags" id="Why_to_Always_Include_Closing_Tags"></a><h5> <span class="mw-headline"> Why to Always Include Closing Tags </span></h5>
+<p>It will make your life easier if you always include closing tags, even if they are technically optional, for the following reasons:
+</p>
+<ul><li> It is best practice to <b>be explicit</b> in your code.
+</li><li> You can see in the spec how there are strict conditions for when the closing tags are implied and when they are not.  Changing something at the end of your document could have <b>adverse consequences</b> to something earlier if you are using implicit end tags.
+</li><li> Popular browsers such as Internet Explorer 9 will create the incorrect DOM structure when closing tags are omitted, leading to <b>hard-to-detect bugs</b>
+</li></ul>
+<p>It might be advantageous to take advantage of this HTML quirk is if you are hard-core trying to optimize the load speed of your pages, but in most other cases, omitting closing tags will only cause frustration.
+</p>
+<a name="Attributes" id="Attributes"></a><h3> <span class="mw-headline"> Attributes </span></h3>
+<p>Both content elements and void elements can have attributes that further define their functionality.  You define an attribute like this:
+</p>
+<div dir="ltr" style="text-align: left;"><div class="source-html4strict" style="font-family: monospace;"><pre><span class="sc2">&lt;contenttag attribute<span class="sy0">=</span><span class="st0">&quot;value&quot;</span><span class="kw2">&gt;</span></span> Content <span class="sc2"><span class="kw2">&lt;</span><span class="sy0">/</span>contenttag&gt;</span>
+<span class="sc2">&lt;emptytag attribute<span class="sy0">=</span><span class="st0">&quot;value&quot;</span> <span class="sy0">/</span><span class="kw2">&gt;</span></span></pre></div></div>
+<a name="Commonly_Used_Tags" id="Commonly_Used_Tags"></a><h3> <span class="mw-headline"> Commonly Used Tags </span></h3>
+<p>For reference, below is a list of commonly used tags in HTML.  For a complete list, see <a href="https://www.w3.org/TR/html5/#contents" class="external text" title="https://www.w3.org/TR/html5/#contents" rel="nofollow">section 4 of the HTML 5 Specification</a>.
+</p><p>Void elements are distinguished from content elements by the presence of a trailing slash.
+</p>
+<a name="Semantic_Elements" id="Semantic_Elements"></a><h4> <span class="mw-headline"> Semantic Elements </span></h4>
+<div style="background-color:#C7DCEB; width:20%; min-width:100px; float:right; padding:10px; text-align:center; border-radius:10px;">
+<p><strong style="font-size:1.5em;"><a href="https://www.youtube.com/watch?v=53bFhkqThCQ&amp;t=5m18s" class="external text" title="https://www.youtube.com/watch?v=53bFhkqThCQ&amp;t=5m18s" rel="nofollow">Watch on DOCTYPE</a></strong>
+</p><p><span style="font-size:1.2em;">Semantic Elements in HTML5</span>
+</p>
+</div>
+<p>Use these tags for defining broad sections of your page with a specific purpose.
+</p>
+<ul><li> <b>&lt;header&gt;</b> Defines the header section of a web page
+</li><li> <b>&lt;footer&gt;</b> Defines the footer section of a web page
+</li><li> <b>&lt;nav&gt;</b> Defines the section of your page that contains navigation links
+</li><li> <b>&lt;article&gt;</b> Defines an article on your page (useful for screen readers)
+</li><li> <b>&lt;section&gt;</b> Defines a real section of your page; for example, one with unique headings distinct from the rest of the document
+</li><li> <b>&lt;figure&gt;</b> Defines a figure
+<ul><li> <b>&lt;figcaption&gt;</b> Defines a caption for that figure (&lt;figcaption&gt; should be nested inside of &lt;figure&gt;)
+</li></ul>
+</li><li> <b>&lt;form&gt;</b> Defines a form into which the user should input data
+<ul><li> <b>&lt;input type=&quot;text/number/date/radio/etcetera&quot; name=&quot;name&quot; /&gt;</b> Defines an input field of a certain type
+</li><li> <b>&lt;label for=&quot;input-id&quot;&gt;</b> Defines a label for an input field with the ID <i>input-id</i>
+</li><li> <b>&lt;select name=&quot;name&quot;&gt;</b> Defines an input field where the user can select one or more choices (like a drop-down box)
+<ul><li> <b>&lt;option value=&quot;value&quot;&gt;</b> Defines an option for the select box
+</li></ul>
+</li><li> <b>&lt;textarea name=&quot;&quot;&gt;</b> Defines a text box (which is larger than a text field)
+</li></ul>
+</li></ul>
+<p>For more information on HTML forms, read the article <a href="/cse330/index.php/HTML_Forms" title="HTML Forms">HTML Forms</a>.
+</p>
+<a name="External_Media" id="External_Media"></a><h4> <span class="mw-headline"> External Media </span></h4>
+<p>Use these tags to include external media onto your page.
+</p>
+<ul><li> <b>&lt;iframe src=&quot;source&quot;&gt;</b> Represents a little window on your page into which <i>source</i> is loaded; <i>source</i> could be a PDF document, for example, or an entire other web page
+</li><li> <b>&lt;link rel=&quot;what&quot; type=&quot;mime&quot; href=&quot;source&quot; /&gt;</b> Defines an external document <i>what</i> located at <i>source</i> with the mime type <i>mime</i> that should be loaded into your HTML page.  <b>Note: &lt;link /&gt; does NOT define a hyperlink! &lt;a&gt; is for that.</b>  Used most commonly for including CSS stylesheets.
+</li><li> <b>&lt;img src=&quot;source&quot; alt=&quot;text&quot; /&gt;</b> Defines an image located at <i>source</i> that has a textual representation of <i>text</i>
+</li><li> <b>&lt;audio&gt;</b> Represents an audio clip on your page
+</li><li> <b>&lt;video&gt;</b> Represents a video clip on your web page
+</li><li> <b>&lt;canvas&gt;</b> Defines a canvas for advanced drawing (we will learn more about this in future modules)
+</li></ul>
+<a name="Outlining_Elements" id="Outlining_Elements"></a><h4> <span class="mw-headline"> Outlining Elements </span></h4>
+<p>Use these elements to define an outline for your page, including definitions and citations.
+</p>
+<ul><li> <b>&lt;h1&gt; to &lt;h6&gt;</b> Defines the outline for your page
+</li><li> <b>&lt;p&gt;</b> Defines a paragraph of text
+</li><li> <b>&lt;dl&gt;</b> Defines a Dictionary List
+<ul><li> <b>&lt;dt&gt;</b> Defines a Dictionary Term
+</li><li> <b>&lt;dd&gt;</b> Defines a Dictionary Definition
+</li></ul>
+</li><li> <b>&lt;table&gt;</b> Defines a table for displaying data
+<ul><li> <b>&lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt;</b> Defines the heading, body content, and footing of a table
+<ul><li> <b>&lt;tr&gt;</b> Defines a table row
+<ul><li> <b>&lt;th&gt;</b> Defines a table cell that contains a heading
+</li><li> <b>&lt;td&gt;</b> Defines a table cell that contains data
+</li></ul>
+</li></ul>
+</li></ul>
+</li><li> <b>&lt;ol&gt; and &lt;ul&gt;</b> Define ordered and unordered lists, respectively (meaning numbered lists and bulleted lists)
+<ul><li> <b>&lt;li&gt;</b> Defines a list item for either &lt;ol&gt; or &lt;ul&gt;
+</li></ul>
+</li><li> <b>&lt;q&gt;</b> Represents a short, inline quotation quoted from another source
+</li><li> <b>&lt;blockquote&gt;</b> Represents a longer block of text quoted from another source
+</li></ul>
+<a name="Miscellaneous_Elements" id="Miscellaneous_Elements"></a><h4> <span class="mw-headline"> Miscellaneous Elements </span></h4>
+<p>This section lists useful elements that don't fit into one of the other categories.
+</p>
+<ul><li> <b>&lt;a href=&quot;destination&quot;&gt;</b> Make a hyperlink to destination
+</li><li> <b>&lt;br /&gt;</b> Denotes where a line break should appear (note that white space is ignored when rendering, so a line break in the source code is <i>not</i> reflected in the output)
+</li><li> <b>&lt;button&gt;</b> Defines a clickable button
+</li><li> <b>&lt;code&gt;</b> Defines a piece of computer code
+</li><li> <b>&lt;output&gt;</b> Defines the result of a calculation
+</li><li> <b>&lt;pre&gt;</b> Defines pre-formatted text in which whitespace will be preserved
+</li><li> <b>&lt;script&gt;</b> Defines a script for your page (we will learn a lot more about this in later modules)
+</li><li> <b>&lt;div&gt;</b> Defines a block section of your document (useful for styling)
+</li><li> <b>&lt;span&gt;</b> Defines an inline section of your document (useful for styling)
+</li></ul>
+<a name="High_School_Analogy" id="High_School_Analogy"></a><h3> <span class="mw-headline"> High School Analogy </span></h3>
+<p>In more ways than not, HTML can be thought of as a markup language for five-paragraph essays that you wrote in history class in high school.  &lt;blockquote&gt; is used to denote long quotations; &lt;h1&gt; through &lt;h6&gt; denote the outline; &lt;p&gt; denotes new paragraphs; &lt;figure&gt; and &lt;figcaption&gt; represent exhibits; &lt;section&gt; could represent chapters if you were writing a longer report; and so on.
+</p><p>Take home message: HTML defines the <i>content</i> of your page.  Use it to its full ability.
+</p>
+<a name="Introduction_to_CSS" id="Introduction_to_CSS"></a><h2> <span class="mw-headline"> Introduction to CSS </span></h2>
+<p>Notice that we haven't said a word about how things look yet.  This is because that is what CSS is for!
+</p><p>CSS stands for <i>Cascading Style Sheets</i>, and it defines the <i>appearance</i> of your page.  CSS is composed of <i>rules</i>, and each rule consists of a <i>selector</i> and one or more <i>declarations</i>.  Let's see an example:
+</p>
+<div dir="ltr" style="text-align: left;"><div class="source-css" style="font-family: monospace;"><pre>header <span class="br0">&#123;</span>
+	<span class="kw1">color</span><span class="sy0">:</span> <span class="kw1">blue</span><span class="sy0">;</span>
+	<span class="kw1">font-family</span><span class="sy0">:</span> Verdana, <span class="kw2">sans-serif</span><span class="sy0">;</span>
+<span class="br0">&#125;</span></pre></div></div>
+<p>The above CSS rule does three things:
+</p>
+<ul><li> It <i>selects</i> all <code>&lt;header&gt;</code> elements
+</li><li> It <i>declares</i> the <i>property</i> <b>color</b> (i.e. the text color) of the selected elements to be blue
+</li><li> It <i>declares</i> the <i>property</i> <b>font-family</b> (i.e. the font "face") of the selected elements to be Verdana, or alternatively any sans-serif font if Verdana is not available
+</li></ul>
+<p>All CSS rules follow this general format.  The following sections will discuss more detail on CSS selectors and declarations.
+</p>
+<a name="Selectors" id="Selectors"></a><h3> <span class="mw-headline"> Selectors </span></h3>
+<div style="background-color:#C7DCEB; width:20%; min-width:100px; float:right; padding:10px; text-align:center; border-radius:10px;">
+<p><strong style="font-size:1.5em;"><a href="https://www.youtube.com/watch?v=W9H95NcbTSw&amp;t=5m27s" class="external text" title="https://www.youtube.com/watch?v=W9H95NcbTSw&amp;t=5m27s" rel="nofollow">Watch on DOCTYPE</a></strong>
+</p><p><span style="font-size:1.2em;">CSS Selectors, Part 1</span>
+</p>
+</div>
+<p>In the previous section's example, the most basic CSS selector was used: selecting by the <i>tag name</i>.  To select by the <i>class name</i>, use a period, like so:
+</p>
+<div dir="ltr" style="text-align: left;"><div class="source-css" style="font-family: monospace;"><pre><span class="re1">.info</span> <span class="br0">&#123;</span>
+	<span class="kw1">font-weight</span><span class="sy0">:</span> <span class="kw2">bold</span><span class="sy0">;</span>
+<span class="br0">&#125;</span></pre></div></div>
+<div style="background-color:#C7DCEB; width:20%; min-width:100px; float:right; padding:10px; text-align:center; border-radius:10px;">
+<p><strong style="font-size:1.5em;"><a href="https://www.youtube.com/watch?v=0a4r4bm1nQA&amp;t=1m29s" class="external text" title="https://www.youtube.com/watch?v=0a4r4bm1nQA&amp;t=1m29s" rel="nofollow">Watch on DOCTYPE</a></strong>
+</p><p><span style="font-size:1.2em;">CSS Selectors, Part 2</span>
+</p>
+</div>
+<p>A third common way to select an element is by its ID.  To select by ID, use a number sign, like so:
+</p>
+<div dir="ltr" style="text-align: left;"><div class="source-css" style="font-family: monospace;"><pre><span class="re0">#medal_table</span> <span class="br0">&#123;</span>
+	<span class="kw1">border-collapse</span><span class="sy0">:</span> <span class="kw2">collapse</span><span class="sy0">;</span>
+<span class="br0">&#125;</span></pre></div></div>
+<p>Selectors can be combined.  For example, to select all hyperlinks in any paragraph having the class "alert", you could do:
+</p>
+<div dir="ltr" style="text-align: left;"><div class="source-css" style="font-family: monospace;"><pre>p<span class="re1">.alert</span> a <span class="br0">&#123;</span>
+	<span class="kw1">font-style</span><span class="sy0">:</span> <span class="kw2">italic</span><span class="sy0">;</span>
+<span class="br0">&#125;</span></pre></div></div>
+<p>The <code>p.alert</code> selects all <code>&lt;p&gt;</code> tags with the class name "alert".  The space tells CSS to look for all descendants of such paragraphs.  Finally, the <code>a</code> selects all <code>&lt;a&gt;</code> elements in the resulting set.
+</p><p>It is also very common to use a right-angle bracket to select a <i>child</i> rather than a <i>descendant</i>, the distinction being that <i>descendants</i> could be nested at any depth: child, grandchild, and so on, while a <i>child</i> must be at the next level down in the DOM.  For example:
+</p>
+<div dir="ltr" style="text-align: left;"><div class="source-css" style="font-family: monospace;"><pre>ul<span class="re1">.fruits</span> &gt; li <span class="br0">&#123;</span>
+	<span class="kw1">text-decoration</span><span class="sy0">:</span> <span class="kw2">underline</span><span class="sy0">;</span>
+<span class="br0">&#125;</span></pre></div></div>
+<p>Some common CSS selectors are listed below.  For a complete list of CSS selectors, see <a href="https://www.w3.org/TR/CSS/#selectors" class="external text" title="https://www.w3.org/TR/CSS/#selectors" rel="nofollow">section 4.2 of the CSS Specification</a>.
+</p>
+<ul><li> <b>foo</b> selects an element with tag name <i>foo</i>
+</li><li> <b>.foo</b> selects an element with the class name <i>foo</i>
+</li><li> <b>#foo</b> selects an element with the ID <i>foo</i>
+</li><li> <b>[foo="bar"]</b> selects an element with the attribute <i>foo</i> whose value is <i>bar</i>
+</li><li> <b>foo bar</b> selects an element matching <i>bar</i> that is a descendant of an element matching <i>foo</i>
+</li><li> <b>foo &gt; bar</b> selects an element matching <i>car</i> that is a child of an element matching <i>foo</i>
+</li><li> <b>foo + bar</b> selects an element matching <i>bar</i> that is the next sibling of an element matching <i>foo</i>
+</li></ul>
+<a name="Pseudo-Classes" id="Pseudo-Classes"></a><h4> <span class="mw-headline"> Pseudo-Classes </span></h4>
+<p>Elements can also be selected based on their current state using <i>pseudo-classes</i>.  Pseudo-classes always begin with a colon.  For example, this is how you could change the color of all visited links on your web page:
+</p>
+<div dir="ltr" style="text-align: left;"><div class="source-css" style="font-family: monospace;"><pre>a<span class="re2">:visited</span> <span class="br0">&#123;</span>
+	<span class="kw1">color</span><span class="sy0">:</span> <span class="re0">#99FF99</span><span class="sy0">;</span> <span class="coMULTI">/* this example uses a hexadecimal RGB definition for the color, which allows you to
+		mix over 16 million colors */</span>
+<span class="br0">&#125;</span></pre></div></div>
+<p>Some common pseudo-classes are listed below.  For a complete list, see <a href="https://www.w3.org/TR/CSS/#selectors" class="external text" title="https://www.w3.org/TR/CSS/#selectors" rel="nofollow">section 4.2 of the CSS Specification</a>.
+</p>
+<ul><li> <b>foo:first-child</b> selects an element matching <i>foo</i> that is the first child of its parent (i.e., any <i>foo</i> that doesn't have older siblings)
+</li><li> <b>foo:last-child</b> selects an element matching <i>foo</i> that is the last child of its parent
+</li><li> <b>foo:empty</b> selects any element matching <i>foo</i> that has no children
+</li><li> Pseudo-Classes for Form Elements:
+<ul><li> <b>input:checked</b> selects all checkboxes and radio buttons that are checked
+</li></ul>
+</li><li> Pseudo-Classes for Hyperlink Elements:
+<ul><li> <b>a:link</b> selects all hyperlinks that have not been visited yet
+</li><li> <b>a:visited</b> selects all hyperlinks that have been visited
+</li></ul>
+</li><li> Pseudo-Classes for Interactive Elements (like buttons, hyperlinks, etc):
+<ul><li> <b>foo:active</b> selects elements matching <i>foo</i> that are being pressed on
+</li><li> <b>foo:hover</b> selects elements matching <i>foo</i> that are being hovered over
+</li><li> <b>foo:focus</b> selects elements matching <i>foo</i> that are selected (no pun intended)
+</li></ul>
+</li></ul>
+<a name="Properties" id="Properties"></a><h3> <span class="mw-headline"> Properties </span></h3>
+<p>Selectors are used to select elements that need to have styles applied to them, and properties are used to actually define those styles.  Throughout this section, you've seen properties including <b>color</b>, <b>font-family</b>, <b>font-style</b>, and <b>text-decoration</b>.  There are dozens more properties you can define, some of which are listed below.
+</p><p>For a complete list of CSS properties, see <a href="https://www.w3.org/TR/CSS/#properties" class="external text" title="https://www.w3.org/TR/CSS/#properties" rel="nofollow">section 4.1 of the CSS Specification</a>.
+</p>
+<ul><li> <b>background-image</b> sets the background image of an element.  Usage: <code>background-image: url(path/to/image.png);</code>
+</li><li> <b>background-color</b> sets the background color of an element (note: the image takes precedence over the color; the color will be displayed if the image can't be found)
+</li><li> For Tables:
+<ul><li> <b>border-collapse</b> removes the spacing between table cells.  Usage: <code>border-collapse: collapse;</code>
+</li><li> Note: You can select td elements that are grandchildren of a table element, and then specify border properties on the td's, like this: <code>#myTable &gt; tr &gt; td { border: 1px solid black; }</code>
+</li></ul>
+</li><li> <b>border</b> defines the border around an element.  Usage: <code>border: 1px dashed red;</code>
+</li><li> <b>border-radius</b> lets you have rounded corners on your elements
+</li><li> <b>float</b> makes the text of a document flow around the element.  Usage: <code>float: left;</code> (or <code>right</code>)
+<ul><li> <b>clear</b> makes an element stop wrapping around floats and instead move down to where the floats end.  Usage: <code>clear: both;</code>
+</li><li> Note: If you specify multiple object in a for as floating, they will appear next to each other horizontally.
+</li></ul>
+</li><li> <b>cursor</b> lets you change the type of cursor that appears then your element is in focus.  Example usage: <code>cursor: pointer;</code>
+</li><li> <b>font</b> lets you specify the font-size, line-height, and font-family in one fell swoop.  Usage: <code>font: 14px/18px Verdana, Arial, sans-serif;</code>
+</li><li> <b>list-style-type</b> specifies the type of number or bullet used on <code>&lt;ol&gt;</code>'s and <code>&lt;ul&gt;</code>'s
+</li><li> <b>text-align</b> lets you justify text on the left, center, or right
+</li><li> <b>display</b> lets us specify an element as inline or block (see below), and it also enables us to "turn off" an element from being displayed on a page.  Example usage: <code>display: none;</code>
+</li></ul>
+<a name="Units" id="Units"></a><h4> <span class="mw-headline"> Units </span></h4>
+<p>Some CSS properties require that you specify numerical values for things (font-size, line-height, border-width, and so on).  CSS supports a number of units, the most common of which include:
+</p>
+<ul><li> <b>px</b>, which defines a distance in pixels (relative to screen resolution).
+</li><li> <b>em</b>, which defines a distance relative to font size.  (Note: an <i>em</i> is the width of the capital letter M.  No, I'm not kidding.)
+</li><li> <b>rem</b>, which defines a distance relative to the font size of the root element.  Compare to <b>em</b>, which defines a distance relative to the font size of the current element (which might have a different font size than the document root).
+</li><li> <b>pt</b>, which is a traditional print unit equal to 1/72 of an inch (should appear the same size on all screens regardless of resolution).
+</li><li> <b>%</b>, which defines a distance relative to that property of its parent element.  For the most part, you'll only use&nbsp;% when working with the Box Model (see below).
+</li></ul>
+<a name="The_Box_Model" id="The_Box_Model"></a><h3> <span class="mw-headline"> The Box Model </span></h3>
+<p>For the most part, all elements fall into one of two categories:
+</p>
+<ul><li> Inline (Examples: a, span, strong)
+</li><li> Block (Examples: p, div, section)
+</li></ul>
+<p>The properties we've seen thus far apply mostly to inline elements.  As it turns out, CSS has an additional set of properties that describe block elements.  These properties compose the <i>box model</i>.
+</p><p>While inline elements flow with the text, block elements stand on their own.  You can define the space between the block element and the next closest element on the page using <i>margin</i>, the block element's border using <i>border</i>, and the space between the block element's border and its content using <i>padding</i>:
+</p><p><a href="/cse330/index.php/File:Box.png" class="image" title="File:Box.png"><img alt="File:Box.png" src="/cse330/images/2/2b/Box.png" width="528" height="316" border="0" /></a>
+</p><p>For example, you could make a padded box that is centered on the page using this CSS:
+</p>
+<div dir="ltr" style="text-align: left;"><div class="source-css" style="font-family: monospace;"><pre>div<span class="re1">.box</span> <span class="br0">&#123;</span>
+	<span class="kw1">width</span><span class="sy0">:</span> <span class="re3">500px</span><span class="sy0">;</span>
+	<span class="kw1">margin</span><span class="sy0">:</span> <span class="nu0">0</span> <span class="kw2">auto</span><span class="sy0">;</span> <span class="coMULTI">/* when two &quot;arguments&quot; are passed to margin or padding, the first defines top
+		and bottom margin/padding and the second defines left and right margin/padding */</span>
+	<span class="kw1">padding</span><span class="sy0">:</span> <span class="re3">25px</span><span class="sy0">;</span> <span class="coMULTI">/* when only one &quot;argument&quot; is passed to margin or padding, it defines the
+		margin/padding on all four sides */</span>
+	<span class="kw1">border</span><span class="sy0">:</span> <span class="re3">1px</span> <span class="kw2">solid</span> <span class="kw1">black</span><span class="sy0">;</span> <span class="coMULTI">/* the 1px defines the border-width; the solid defines the border-style;
+		the black defines the border-color */</span>
+<span class="br0">&#125;</span></pre></div></div>
+<p>Here is what the resulting box looks like:
+</p><p><a href="/cse330/index.php/File:CSSBoxExample.png" class="image" title="File:CSSBoxExample.png"><img alt="File:CSSBoxExample.png" src="/cse330/images/6/6d/CSSBoxExample.png" width="866" height="358" border="0" /></a>
+</p><p>Note that the <i>width</i> defines only the <i>content width</i>.  To compute the actual "width" of the element, you need to add the left and right padding border, and margin.
+</p><p>This is only scraping the surface of the CSS box model.  All advanced web sites utilize the box model to its full extent to produce the complex layouts you have come to expect on the internet.  For more information on the CSS box model, read <a href="https://www.w3.org/TR/css3-box/" class="external text" title="https://www.w3.org/TR/css3-box/" rel="nofollow">the W3C specification</a>.
+</p>
+<a name="Typography" id="Typography"></a><h3> <span class="mw-headline"> Typography </span></h3>
+<p>Traditionally, Web developers were limited to a small subset of fonts that were commonly installed on all computers:
+</p>
+<ul><li> Andale Mono
+</li><li> Arial
+</li><li> Arial Black
+</li><li> Comic Sans MS
+</li><li> Courier New
+</li><li> Georgia
+</li><li> Impact
+</li><li> Times New Roman
+</li><li> Trebuchet MS
+</li><li> Verdana
+</li><li> Webdings
+</li></ul>
+<p>That was it.  Incredibly limiting.
+</p><p>However, fonts other than these are used widely on the Web.  How?  CSS has evolved to the point where it now allows you to upload a font to your server, and use that font on your site, or even include CSS from another server that adds the fonts you want. One excellent resource for a wide variety of fast, appropriately-licensed fonts is <a href="https://fonts.google.com/" class="external text" title="https://fonts.google.com/" rel="nofollow">Google Fonts</a>.
+</p>
+<a name="Using_HTML_and_CSS_in_your_Web_Page" id="Using_HTML_and_CSS_in_your_Web_Page"></a><h2> <span class="mw-headline"> Using HTML and CSS in your Web Page </span></h2>
+<p>Recall that HTML defines the <i>content</i> of your page, while CSS defines the <i>appearance</i>.
+</p><p>Most of the HTML you write will be in the <code>&lt;body&gt;</code> tag, because, naturally, this is where the <i>content</i> of your page should reside.  CSS, on the other hand, is supplemental to the content, and so it should be included in the <code>&lt;head&gt;</code> tag, as shown in the following section.
+</p>
+<a name="How_to_Include_CSS" id="How_to_Include_CSS"></a><h3> <span class="mw-headline"> How to Include CSS </span></h3>
+<p>There are three options for using CSS in your web page:
+</p>
+<ol><li> Loading external stylesheets
+</li><li> Embedding stylesheets in the document
+</li><li> Inline styles using the style attribute
+</li></ol>
+<p>The first option is almost always preferred in production applications for the following reasons:
+</p>
+<ul><li> Browsers can cache external stylesheets, so once they've loaded the stylesheet once, they won't have to load it again, making future pages load faster and reducing requests to your server
+</li><li> External stylesheets are more modular; that is, they can be included in multiple pages on your web site without the need for copying and pasting embedded stylesheets
+</li></ul>
+<p>To include external stylesheets in your document, place the following empty HTML tag in your <code>&lt;head&gt;</code>:
+</p>
+<div dir="ltr" style="text-align: left;"><div class="source-html4strict" style="font-family: monospace;"><pre><span class="sc2"><span class="kw2">&lt;link</span> <span class="kw3">rel</span><span class="sy0">=</span><span class="st0">&quot;stylesheet&quot;</span> <span class="kw3">type</span><span class="sy0">=</span><span class="st0">&quot;text/css&quot;</span> <span class="kw3">href</span><span class="sy0">=</span><span class="st0">&quot;path/to/stylesheet.css&quot;</span> <span class="sy0">/</span><span class="kw2">&gt;</span></span></pre></div></div>
+<p><br />
+It may be convenient during development to use embedded stylesheets, because then you don't have to click back and forth between files in your IDE and clear your browser cache.  You may place embedded stylesheets in a <code>&lt;style&gt;</code> tag, also in your <code>&lt;head&gt;</code>:
+</p>
+<div dir="ltr" style="text-align: left;"><div class="source-html4strict" style="font-family: monospace;"><pre><span class="sc2"><span class="kw2">&lt;style</span> <span class="kw3">type</span><span class="sy0">=</span><span class="st0">&quot;text/css&quot;</span><span class="kw2">&gt;</span></span>
+styles {
+	go: here;
+}
+<span class="sc2"><span class="kw2">&lt;/style&gt;</span></span></pre></div></div>
+<p><br />
+For a variety of reasons, inline styles should almost always be avoided.  Instead of using inline styles, give your element a CSS class, and assign styles to that class in your stylesheet:
+</p>
+<div dir="ltr" style="text-align: left;"><div class="source-css" style="font-family: monospace;"><pre>p<span class="re1">.notice</span> <span class="br0">&#123;</span>
+	<span class="kw1">color</span><span class="sy0">:</span> <span class="kw1">blue</span><span class="sy0">;</span>
+<span class="br0">&#125;</span></pre></div></div>
+<div dir="ltr" style="text-align: left;"><div class="source-html4strict" style="font-family: monospace;"><pre><span class="sc2"><span class="kw2">&lt;p</span> <span class="kw3">class</span><span class="sy0">=</span><span class="st0">&quot;notice&quot;</span><span class="kw2">&gt;</span></span>Well done using classes instead of inline styles!<span class="sc2"><span class="kw2">&lt;/p&gt;</span></span></pre></div></div>
+<p><br />
+Just so you know it when you see it, the following example shows the usage of inline styles, which are declared using the <b>style</b> attribute.
+</p>
+<div dir="ltr" style="text-align: left;"><div class="source-html4strict" style="font-family: monospace;"><pre><span class="sc2"><span class="kw2">&lt;p</span> <span class="kw3">style</span><span class="sy0">=</span><span class="st0">&quot;color:red;&quot;</span><span class="kw2">&gt;</span></span>You'd better think twice about using inline styles.<span class="sc2"><span class="kw2">&lt;/p&gt;</span></span></pre></div></div>
+<a name="Quick_and_Easy_Page_Layout" id="Quick_and_Easy_Page_Layout"></a><h3> <span class="mw-headline"> Quick and Easy Page Layout </span></h3>
+<p>I like to use the following code when I just want a simple, aesthetically pleasing web page:
+</p>
+<div dir="ltr" style="text-align: left;"><div class="source-html4strict" style="font-family: monospace;"><pre><span class="sc0">&lt;!DOCTYPE html&gt;</span>
+<span class="sc2"><span class="kw2">&lt;head&gt;</span></span>
+<span class="sc2"><span class="kw2">&lt;meta</span> <span class="kw3">charset</span><span class="sy0">=</span><span class="st0">&quot;utf-8&quot;</span><span class="sy0">/</span><span class="kw2">&gt;</span></span>
+<span class="sc2"><span class="kw2">&lt;title&gt;</span></span>My Web Page<span class="sc2"><span class="kw2">&lt;/title&gt;</span></span>
+<span class="sc2"><span class="kw2">&lt;style</span> <span class="kw3">type</span><span class="sy0">=</span><span class="st0">&quot;text/css&quot;</span><span class="kw2">&gt;</span></span>
+body{
+	width: 760px; /* how wide to make your web page */
+	background-color: teal; /* what color to make the background */
+	margin: 0 auto;
+	padding: 0;
+	font:12px/16px Verdana, sans-serif; /* default font */
+}
+div#main{
+	background-color: #FFF;
+	margin: 0;
+	padding: 10px;
+}
+<span class="sc2"><span class="kw2">&lt;/style&gt;</span></span>
+<span class="sc2"><span class="kw2">&lt;/head&gt;</span></span>
+<span class="sc2"><span class="kw2">&lt;body&gt;</span></span><span class="sc2"><span class="kw2">&lt;div</span> <span class="kw3">id</span><span class="sy0">=</span><span class="st0">&quot;main&quot;</span><span class="kw2">&gt;</span></span>
+&nbsp;
+<span class="sc2"><span class="coMULTI">&lt;!-- CONTENT HERE --&gt;</span></span>
+&nbsp;
+<span class="sc2"><span class="kw2">&lt;/div&gt;</span></span><span class="sc2"><span class="kw2">&lt;/body&gt;</span></span>
+<span class="sc2"><span class="kw2">&lt;/html&gt;</span></span></pre></div></div>
+<p>Put your document where the <code>&lt;!-- CONTENT HERE --&gt;</code> is.  Your page will go instantly from dull-looking to presentable.&nbsp;;-)
+</p>
+<a name="The_HTML5_Shiv" id="The_HTML5_Shiv"></a><h3> <span class="mw-headline"> The HTML5 Shiv </span></h3>
+<p>Some browsers (*cough cough* IE &lt; version 9) do strange things when you apply CSS styles to the newest HTML elements that were introduced with HTML5.  Fortunately, there is a painless solution.  Simply include the following code in your <b>&lt;head&gt;</b> tag:
+</p>
+<div dir="ltr" style="text-align: left;"><div class="source-html4strict" style="font-family: monospace;"><pre><span class="sc2"><span class="coMULTI">&lt;!--[if lt IE 9]&gt;</span></span>
+<span class="sc2"><span class="kw2">&lt;script</span> <span class="kw3">src</span><span class="sy0">=</span><span class="st0">&quot;https://html5shiv.googlecode.com/svn/trunk/html5.js&quot;</span><span class="kw2">&gt;</span></span><span class="sc2"><span class="kw2">&lt;/script&gt;</span></span>
+<span class="sc2"><span class="kw2">&lt;</span>!<span class="br0">&#91;</span>endif<span class="br0">&#93;</span>--<span class="kw2">&gt;</span></span></pre></div></div>
+<p>This so-called <b>HTML5 Shiv</b> will make older versions of Internet Explorer render your pages more closely to how modern browsers do.
+</p>
+<a name="Validation" id="Validation"></a><h2> <span class="mw-headline"> Validation </span></h2>
+<p><a href="http://xkcd.com/1144/" target="_blank"><img src="http://imgs.xkcd.com/comics/tags.png" alt="XKCD Comic: tags" title="XKCD Comic: tags"></a>
+</p><p>HTML and to a lesser extent CSS are forgiving when it comes to syntactical errors in your code.  However, it is not good practice to ignore your syntax errors for a variety of reasons:
+</p>
+<ul><li> <b>Faster and More Reliable Rendering.</b>  Don't leave it up to your client's browser to decide what you meant when you made your syntax error.
+</li><li> <b>Interoperability with Compliant Browsers.</b>  Although a web page may <i>look</i> right in your <i>testing</i> browser, you need to remember that there are <i>lots</i> of different user agents: other browsers, mobile devices, and screen readers, just to name a few.
+</li><li> <b>Accessibility.</b>  Valid HTML code enables you to be confident that your page will be accessible to people with disabilities, such as the blind.
+</li><li> <b>Search Engine Optimization.</b> Web sites with valid HTML syntax rank higher in search engines like Google.
+</li><li> <b>Future Proofing.</b>  The W3C specification will not be made backwards-incompatible, so writing valid HTML syntax ensures that your page will work well into the future.
+</li><li> <b>More Professional.</b>  No seasoned web developer will publish a page with accidental syntax errors.
+</li></ul>
+<p>The industry standard tool for HTML and CSS syntax checking is the <b><a href="https://validator.w3.org/" class="external text" title="https://validator.w3.org/" rel="nofollow">W3C Validator</a></b>.  <b>You should ALWAYS validate your code before completing your project!</b>  The Validator gives very helpful feedback to help you find and fix syntax errors.
+</p><p>For more information on why it is important to validate, see <a href="https://validator.w3.org/docs/why.html" class="external text" title="https://validator.w3.org/docs/why.html" rel="nofollow">the W3C's recommendation</a>.
+</p>
+<a name="But_why_don.27t.E2.80.A6" id="But_why_don.27t.E2.80.A6"></a><h3> <span class="mw-headline"> But why don't… </span></h3>
+<p>As you play around with the validator, you may have discovered that household name sites like <a href="https://www.google.com/" class="external text" title="https://www.google.com/" rel="nofollow">Google</a> and <a href="https://www.yahoo.com/" class="external text" title="https://www.yahoo.com/" rel="nofollow">Yahoo</a> do not pass the validator.  This is a deliberate act on the part of these web sites because of the following reasons:
+</p>
+<ul><li> <b>Download Speed.</b>  Sometimes, but not always, valid code adds bytes to the file size.  Sites that serve tens of thousands of requests per second are highly concerned with the increased file size.
+</li><li> <b>Interoperability with Non-Compliant Browsers.</b>  <i>Very</i> old browsers like Netscape Navigator and Internet Explorer 5 do not respond the way that modern browsers do to the same markup.
+</li></ul>
+<p>However, do not take these as reasons to not validate your own code.  The reasons listed in the previous section almost always outweigh the counterpoints in this section.
+</p>
+<!-- 
+NewPP limit report
+Preprocessor node count: 312/1000000
+Post-expand include size: 1159/2097152 bytes
+Template argument size: 128/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key FA09_cse330_wiki:pcache:idhash:23-0!1!0!!en!2!edit=0 and timestamp 20170726060402 -->
+<div class="printfooter">
+Retrieved from "<a href="http://classes.engineering.wustl.edu/cse330/index.php/HTML_and_CSS">http://classes.engineering.wustl.edu/cse330/index.php/HTML_and_CSS</a>"</div>
+			<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/cse330/index.php/Special:Categories" title="Special:Categories">Categories</a>:&#32;<span dir='ltr'><a href="/cse330/index.php?title=Category:Exclude_in_print&amp;action=edit&amp;redlink=1" class="new" title="Category:Exclude in print (page does not exist)">Exclude in print</a></span> | <span dir='ltr'><a href="/cse330/index.php/Category:Module_1" title="Category:Module 1">Module 1</a></span></div></div>			<!-- end content -->
+						<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<div class="pBody">
+			<ul>
+	
+				 <li id="ca-nstab-main" class="selected"><a href="/cse330/index.php/HTML_and_CSS" title="View the content page [c]" accesskey="c">Page</a></li>
+				 <li id="ca-talk" class="new"><a href="/cse330/index.php?title=Talk:HTML_and_CSS&amp;action=edit&amp;redlink=1" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				 <li id="ca-viewsource"><a href="/cse330/index.php?title=HTML_and_CSS&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				 <li id="ca-history"><a href="/cse330/index.php?title=HTML_and_CSS&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="/cse330/index.php?title=Special:UserLogin&amp;returnto=HTML_and_CSS" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(http://classes.engineering.wustl.edu/cse330/CSE-330-Logo.png);" href="/cse330/index.php/CSE_330_Online_Textbook_-_Table_of_Contents" title="Visit the main page [z]" accesskey="z"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class='generated-sidebar portlet' id='p-navigation'>
+		<h5>Navigation</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Table-of-Contents"><a href="/cse330/index.php/CSE_330_Online_Textbook_-_Table_of_Contents">Table of Contents</a></li>
+				<li id="n-recentchanges"><a href="/cse330/index.php/Special:RecentChanges" title="The list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+				<li id="n-randompage"><a href="/cse330/index.php/Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="/cse330/index.php" id="searchform"><div>
+				<input type='hidden' name="title" value="Special:Search"/>
+				<input id="searchInput" name="search" type="text" title="Search CSE330 Wiki [f]" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" title="Go to a page with this exact name if exists" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" id="mw-searchButton" value="Search" title="Search the pages for this text" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="/cse330/index.php/Special:WhatLinksHere/HTML_and_CSS" title="List of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="/cse330/index.php/Special:RecentChangesLinked/HTML_and_CSS" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+<li id="t-specialpages"><a href="/cse330/index.php/Special:SpecialPages" title="List of all special pages [q]" accesskey="q">Special pages</a></li>
+				<li id="t-print"><a href="/cse330/index.php?title=HTML_and_CSS&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>				<li id="t-permalink"><a href="/cse330/index.php?title=HTML_and_CSS&amp;oldid=2269" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-download-as-pdf"><a href="/cse330/index.php?title=Special:Book/render_article/&amp;arttitle=HTML+and+CSS&amp;oldid=2269&amp;writer=rl" rel="nofollow">PDF version</a></li>			</ul>
+		</div>
+	</div>
+	<div class='generated-sidebar portlet' id='p-coll-create_a_book'>
+		<h5>Create a book</h5>
+		<div class='pBody'>
+<ul id="collectionPortletList"><li id="coll-add_page"><a href="/cse330/index.php?title=Special:Book/add_article/&amp;arttitle=HTML+and+CSS&amp;oldid=0" title="Add the current wiki page to your book" onclick="collectionCall(&#039;AddArticle&#039;, [&#039;removepage&#039;, wgNamespaceNumber, wgTitle, 0]); return false;" rel="nofollow">Add page to book</a></li><li id="coll-help_collections"><a href="/cse330/index.php/Help:Books" title="Show help about the book tool">Books help</a></li></ul><script type= "text/javascript">/*<![CDATA[*/
+		var wgCollectionAddRemoveSate = "addpage";
+		/*]]>*/</script>
+<script type="text/javascript" src="/cse330/extensions/Collection/collection/portlet.js?2"></script>		</div>
+	</div>
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="/cse330/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" /></a></div>
+			<ul id="f-list">
+					<li id="lastmod"> This page was last modified on 11 February 2017, at 15:37.</li>
+					<li id="viewcount">This page has been accessed 23,725 times.</li>
+					<li id="privacy"><a href="/cse330/index.php/CSE330_Wiki:Privacy_policy" title="CSE330 Wiki:Privacy policy">Privacy policy</a></li>
+					<li id="about"><a href="/cse330/index.php/CSE330_Wiki:About" title="CSE330 Wiki:About">About CSE330 Wiki</a></li>
+					<li id="disclaimer"><a href="/cse330/index.php/CSE330_Wiki:General_disclaimer" title="CSE330 Wiki:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+</div>
+
+		<script type="text/javascript">if (window.runOnloadHook) runOnloadHook();</script>
+<!-- Served in 1.869 secs. --></body></html>

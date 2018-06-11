@@ -1,0 +1,117 @@
+.prev,.future
+{
+    background-color: #f1f1f1;
+    color: red;
+    float: left;
+    position: absolute;
+    left: 22px;
+    top: 12px;
+    z-index: 0;
+
+}
+
+.next 
+{
+    background-color:#f1f1f1;
+    color: black;
+    float: right;
+    position: absolute;
+    right: 25px;
+    top: 12px;
+    z-index: 0;
+
+}
+
+.round 
+{
+    border-radius: 59%;
+    padding: 10px 20px;
+    font-size: 20px;
+    width: 5%;
+    opacity: 0.5;
+}
+.new
+{
+	color:red;
+	font-size: 20px;
+	text-align: top;
+}
+
+th,td
+{
+	padding: 50px;
+	text-align: center;
+	border: 5px solid black;
+}
+
+#month 
+{
+    margin: auto;*
+    /*width: 80%;
+    border: 3px solid #73AD21;*/
+    padding: 10px;
+    /*padding: 170px 125px;*/
+    width: 99%;
+    background: #034f84;
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    position: relative;
+}
+#year 
+{
+   margin: auto;*
+    /*width: 80%;
+    border: 3px solid #73AD21;*/
+    padding: 10px;
+    /*padding: 170px 125px;*/
+    width: 99%;
+    background: #034f84;
+    color: gray;
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    position: relative;
+}
+
+/* Style the tab */
+div.tab 
+{
+	margin: auto;
+	width: 99%;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
